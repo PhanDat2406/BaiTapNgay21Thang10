@@ -1,0 +1,409 @@
+namespace Bai3
+{
+    partial class FormStudent
+    {
+        private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.GroupBox grpInput;
+        private System.Windows.Forms.Label lblStudentId;
+        private System.Windows.Forms.TextBox txtStudentId;
+        private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.TextBox txtFullName;
+        private System.Windows.Forms.Label lblAge;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.Label lblGender;
+        private System.Windows.Forms.ComboBox cboGender;
+        private System.Windows.Forms.PictureBox picAvatar;
+        private System.Windows.Forms.Button btnChooseAvatar;
+        private System.Windows.Forms.Label lblAvatarPathTitle;
+        private System.Windows.Forms.Label lblAvatarPath;
+        private System.Windows.Forms.GroupBox grpActions;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnExportCsv;
+        private System.Windows.Forms.Button btnLoadAsync;
+        private System.Windows.Forms.ProgressBar progressBarLoad;
+        private System.Windows.Forms.Label lblProgressPercent;
+        private System.Windows.Forms.Label lblLoadStatus;
+        private System.Windows.Forms.GroupBox grpList;
+        private System.Windows.Forms.DataGridView dgvStudents;
+        private System.Windows.Forms.ContextMenuStrip cmsStudentGrid;
+        private System.Windows.Forms.ToolStripMenuItem tsmiDeleteRow;
+        private System.Windows.Forms.ToolStripMenuItem tsmiRefreshData;
+        private System.Windows.Forms.ToolStripMenuItem tsmiViewDetail;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            components = new System.ComponentModel.Container();
+            grpInput = new System.Windows.Forms.GroupBox();
+            lblStudentId = new System.Windows.Forms.Label();
+            txtStudentId = new System.Windows.Forms.TextBox();
+            lblFullName = new System.Windows.Forms.Label();
+            txtFullName = new System.Windows.Forms.TextBox();
+            lblAge = new System.Windows.Forms.Label();
+            txtAge = new System.Windows.Forms.TextBox();
+            lblGender = new System.Windows.Forms.Label();
+            cboGender = new System.Windows.Forms.ComboBox();
+            picAvatar = new System.Windows.Forms.PictureBox();
+            btnChooseAvatar = new System.Windows.Forms.Button();
+            lblAvatarPathTitle = new System.Windows.Forms.Label();
+            lblAvatarPath = new System.Windows.Forms.Label();
+            grpActions = new System.Windows.Forms.GroupBox();
+            btnAdd = new System.Windows.Forms.Button();
+            btnDelete = new System.Windows.Forms.Button();
+            btnUpdate = new System.Windows.Forms.Button();
+            btnClear = new System.Windows.Forms.Button();
+            btnExportCsv = new System.Windows.Forms.Button();
+            btnLoadAsync = new System.Windows.Forms.Button();
+            progressBarLoad = new System.Windows.Forms.ProgressBar();
+            lblProgressPercent = new System.Windows.Forms.Label();
+            lblLoadStatus = new System.Windows.Forms.Label();
+            grpList = new System.Windows.Forms.GroupBox();
+            dgvStudents = new System.Windows.Forms.DataGridView();
+            cmsStudentGrid = new System.Windows.Forms.ContextMenuStrip(components);
+            tsmiDeleteRow = new System.Windows.Forms.ToolStripMenuItem();
+            tsmiRefreshData = new System.Windows.Forms.ToolStripMenuItem();
+            tsmiViewDetail = new System.Windows.Forms.ToolStripMenuItem();
+            errorProvider1 = new System.Windows.Forms.ErrorProvider(components);
+            grpInput.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)picAvatar).BeginInit();
+            grpActions.SuspendLayout();
+            grpList.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).BeginInit();
+            cmsStudentGrid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
+            SuspendLayout();
+            // 
+            // grpInput
+            // 
+            grpInput.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            grpInput.Controls.Add(lblStudentId);
+            grpInput.Controls.Add(txtStudentId);
+            grpInput.Controls.Add(lblFullName);
+            grpInput.Controls.Add(txtFullName);
+            grpInput.Controls.Add(lblAge);
+            grpInput.Controls.Add(txtAge);
+            grpInput.Controls.Add(lblGender);
+            grpInput.Controls.Add(cboGender);
+            grpInput.Controls.Add(picAvatar);
+            grpInput.Controls.Add(btnChooseAvatar);
+            grpInput.Controls.Add(lblAvatarPathTitle);
+            grpInput.Controls.Add(lblAvatarPath);
+            grpInput.Location = new System.Drawing.Point(12, 12);
+            grpInput.Name = "grpInput";
+            grpInput.Size = new System.Drawing.Size(860, 160);
+            grpInput.TabIndex = 0;
+            grpInput.TabStop = false;
+            grpInput.Text = "Thông tin nhập liệu";
+            // 
+            // lblStudentId
+            // 
+            lblStudentId.AutoSize = true;
+            lblStudentId.Location = new System.Drawing.Point(15, 28);
+            lblStudentId.Name = "lblStudentId";
+            lblStudentId.Size = new System.Drawing.Size(43, 15);
+            lblStudentId.TabIndex = 0;
+            lblStudentId.Text = "Mã SV:";
+            // 
+            // txtStudentId
+            // 
+            txtStudentId.Location = new System.Drawing.Point(85, 25);
+            txtStudentId.Name = "txtStudentId";
+            txtStudentId.Size = new System.Drawing.Size(180, 23);
+            txtStudentId.TabIndex = 1;
+            // 
+            // lblFullName
+            // 
+            lblFullName.AutoSize = true;
+            lblFullName.Location = new System.Drawing.Point(15, 68);
+            lblFullName.Name = "lblFullName";
+            lblFullName.Size = new System.Drawing.Size(46, 15);
+            lblFullName.TabIndex = 2;
+            lblFullName.Text = "Họ tên:";
+            // 
+            // txtFullName
+            // 
+            txtFullName.Location = new System.Drawing.Point(85, 65);
+            txtFullName.Name = "txtFullName";
+            txtFullName.Size = new System.Drawing.Size(180, 23);
+            txtFullName.TabIndex = 3;
+            // 
+            // lblAge
+            // 
+            lblAge.AutoSize = true;
+            lblAge.Location = new System.Drawing.Point(295, 28);
+            lblAge.Name = "lblAge";
+            lblAge.Size = new System.Drawing.Size(33, 15);
+            lblAge.TabIndex = 4;
+            lblAge.Text = "Tuổi:";
+            // 
+            // txtAge
+            // 
+            txtAge.Location = new System.Drawing.Point(365, 25);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new System.Drawing.Size(150, 23);
+            txtAge.TabIndex = 5;
+            // 
+            // lblGender
+            // 
+            lblGender.AutoSize = true;
+            lblGender.Location = new System.Drawing.Point(295, 68);
+            lblGender.Name = "lblGender";
+            lblGender.Size = new System.Drawing.Size(55, 15);
+            lblGender.TabIndex = 6;
+            lblGender.Text = "Giới tính:";
+            // 
+            // cboGender
+            // 
+            cboGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cboGender.FormattingEnabled = true;
+            cboGender.Items.AddRange(new object[] { "Nam", "Nữ" });
+            cboGender.Location = new System.Drawing.Point(365, 65);
+            cboGender.Name = "cboGender";
+            cboGender.Size = new System.Drawing.Size(150, 23);
+            cboGender.TabIndex = 7;
+            // 
+            // lblAvatarPathTitle
+            // 
+            lblAvatarPathTitle.AutoSize = true;
+            lblAvatarPathTitle.Location = new System.Drawing.Point(15, 115);
+            lblAvatarPathTitle.Name = "lblAvatarPathTitle";
+            lblAvatarPathTitle.Size = new System.Drawing.Size(54, 15);
+            lblAvatarPathTitle.TabIndex = 8;
+            lblAvatarPathTitle.Text = "Tệp ảnh:";
+            // 
+            // lblAvatarPath
+            // 
+            lblAvatarPath.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            lblAvatarPath.AutoEllipsis = true;
+            lblAvatarPath.Location = new System.Drawing.Point(85, 115);
+            lblAvatarPath.Name = "lblAvatarPath";
+            lblAvatarPath.Size = new System.Drawing.Size(430, 23);
+            lblAvatarPath.TabIndex = 9;
+            lblAvatarPath.Text = "(Chưa chọn ảnh)";
+            // 
+            // picAvatar
+            // 
+            picAvatar.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            picAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            picAvatar.Location = new System.Drawing.Point(585, 20);
+            picAvatar.Name = "picAvatar";
+            picAvatar.Size = new System.Drawing.Size(110, 125);
+            picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            picAvatar.TabIndex = 10;
+            picAvatar.TabStop = false;
+            // 
+            // btnChooseAvatar
+            // 
+            btnChooseAvatar.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            btnChooseAvatar.Location = new System.Drawing.Point(715, 20);
+            btnChooseAvatar.Name = "btnChooseAvatar";
+            btnChooseAvatar.Size = new System.Drawing.Size(125, 32);
+            btnChooseAvatar.TabIndex = 11;
+            btnChooseAvatar.Text = "Chọn ảnh...";
+            btnChooseAvatar.UseVisualStyleBackColor = true;
+            btnChooseAvatar.Click += btnChooseAvatar_Click;
+            // 
+            // grpActions
+            // 
+            grpActions.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            grpActions.Controls.Add(btnAdd);
+            grpActions.Controls.Add(btnDelete);
+            grpActions.Controls.Add(btnUpdate);
+            grpActions.Controls.Add(btnClear);
+            grpActions.Controls.Add(btnExportCsv);
+            grpActions.Controls.Add(btnLoadAsync);
+            grpActions.Controls.Add(progressBarLoad);
+            grpActions.Controls.Add(lblProgressPercent);
+            grpActions.Controls.Add(lblLoadStatus);
+            grpActions.Location = new System.Drawing.Point(12, 178);
+            grpActions.Name = "grpActions";
+            grpActions.Size = new System.Drawing.Size(860, 95);
+            grpActions.TabIndex = 1;
+            grpActions.TabStop = false;
+            grpActions.Text = "Chức năng & Tiến trình Async";
+            // 
+            // btnAdd
+            // 
+            btnAdd.Location = new System.Drawing.Point(15, 22);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new System.Drawing.Size(80, 28);
+            btnAdd.TabIndex = 0;
+            btnAdd.Text = "Thêm";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new System.Drawing.Point(105, 22);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new System.Drawing.Size(80, 28);
+            btnDelete.TabIndex = 1;
+            btnDelete.Text = "Xóa";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new System.Drawing.Point(195, 22);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new System.Drawing.Size(80, 28);
+            btnUpdate.TabIndex = 2;
+            btnUpdate.Text = "Cập nhật";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new System.Drawing.Point(285, 22);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new System.Drawing.Size(80, 28);
+            btnClear.TabIndex = 3;
+            btnClear.Text = "Làm mới";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
+            // btnExportCsv
+            // 
+            btnExportCsv.Location = new System.Drawing.Point(375, 22);
+            btnExportCsv.Name = "btnExportCsv";
+            btnExportCsv.Size = new System.Drawing.Size(105, 28);
+            btnExportCsv.TabIndex = 4;
+            btnExportCsv.Text = "Xuất file CSV";
+            btnExportCsv.UseVisualStyleBackColor = true;
+            btnExportCsv.Click += btnExportCsv_Click;
+            // 
+            // btnLoadAsync
+            // 
+            btnLoadAsync.Location = new System.Drawing.Point(490, 22);
+            btnLoadAsync.Name = "btnLoadAsync";
+            btnLoadAsync.Size = new System.Drawing.Size(125, 28);
+            btnLoadAsync.TabIndex = 5;
+            btnLoadAsync.Text = "Tải dữ liệu Async";
+            btnLoadAsync.UseVisualStyleBackColor = true;
+            btnLoadAsync.Click += btnLoadAsync_Click;
+            // 
+            // progressBarLoad
+            // 
+            progressBarLoad.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            progressBarLoad.Location = new System.Drawing.Point(15, 60);
+            progressBarLoad.Name = "progressBarLoad";
+            progressBarLoad.Size = new System.Drawing.Size(600, 20);
+            progressBarLoad.TabIndex = 6;
+            // 
+            // lblProgressPercent
+            // 
+            lblProgressPercent.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            lblProgressPercent.AutoSize = true;
+            lblProgressPercent.Location = new System.Drawing.Point(625, 63);
+            lblProgressPercent.Name = "lblProgressPercent";
+            lblProgressPercent.Size = new System.Drawing.Size(23, 15);
+            lblProgressPercent.TabIndex = 7;
+            lblProgressPercent.Text = "0%";
+            // 
+            // lblLoadStatus
+            // 
+            lblLoadStatus.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right;
+            lblLoadStatus.AutoSize = true;
+            lblLoadStatus.Location = new System.Drawing.Point(670, 63);
+            lblLoadStatus.Name = "lblLoadStatus";
+            lblLoadStatus.Size = new System.Drawing.Size(51, 15);
+            lblLoadStatus.TabIndex = 8;
+            lblLoadStatus.Text = "Sẵn sàng";
+            // 
+            // grpList
+            // 
+            grpList.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
+            grpList.Controls.Add(dgvStudents);
+            grpList.Location = new System.Drawing.Point(12, 279);
+            grpList.Name = "grpList";
+            grpList.Size = new System.Drawing.Size(860, 270);
+            grpList.TabIndex = 2;
+            grpList.TabStop = false;
+            grpList.Text = "Danh sách sinh viên (Chuột phải để mở menu)";
+            // 
+            // dgvStudents
+            // 
+            dgvStudents.AllowUserToAddRows = false;
+            dgvStudents.AllowUserToDeleteRows = false;
+            dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStudents.ContextMenuStrip = cmsStudentGrid;
+            dgvStudents.Dock = System.Windows.Forms.DockStyle.Fill;
+            dgvStudents.Location = new System.Drawing.Point(3, 19);
+            dgvStudents.MultiSelect = false;
+            dgvStudents.Name = "dgvStudents";
+            dgvStudents.ReadOnly = true;
+            dgvStudents.RowHeadersVisible = false;
+            dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            dgvStudents.Size = new System.Drawing.Size(854, 248);
+            dgvStudents.TabIndex = 0;
+            dgvStudents.CellMouseDown += dgvStudents_CellMouseDown;
+            // 
+            // cmsStudentGrid
+            // 
+            cmsStudentGrid.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { tsmiDeleteRow, tsmiRefreshData, tsmiViewDetail });
+            cmsStudentGrid.Name = "cmsStudentGrid";
+            cmsStudentGrid.Size = new System.Drawing.Size(157, 70);
+            // 
+            // tsmiDeleteRow
+            // 
+            tsmiDeleteRow.Name = "tsmiDeleteRow";
+            tsmiDeleteRow.Size = new System.Drawing.Size(156, 22);
+            tsmiDeleteRow.Text = "Xóa dòng";
+            tsmiDeleteRow.Click += tsmiDeleteRow_Click;
+            // 
+            // tsmiRefreshData
+            // 
+            tsmiRefreshData.Name = "tsmiRefreshData";
+            tsmiRefreshData.Size = new System.Drawing.Size(156, 22);
+            tsmiRefreshData.Text = "Làm mới dữ liệu";
+            tsmiRefreshData.Click += tsmiRefreshData_Click;
+            // 
+            // tsmiViewDetail
+            // 
+            tsmiViewDetail.Name = "tsmiViewDetail";
+            tsmiViewDetail.Size = new System.Drawing.Size(156, 22);
+            tsmiViewDetail.Text = "Xem chi tiết";
+            tsmiViewDetail.Click += tsmiViewDetail_Click;
+            // 
+            // errorProvider1
+            // 
+            errorProvider1.ContainerControl = this;
+            // 
+            // FormStudent
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(884, 561);
+            Controls.Add(grpList);
+            Controls.Add(grpActions);
+            Controls.Add(grpInput);
+            MinimumSize = new System.Drawing.Size(800, 500);
+            Name = "FormStudent";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Quản lý Sinh viên (Async/Await & ProgressBar)";
+            Load += FormStudent_Load;
+            grpInput.ResumeLayout(false);
+            grpInput.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)picAvatar).EndInit();
+            grpActions.ResumeLayout(false);
+            grpActions.PerformLayout();
+            grpList.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dgvStudents).EndInit();
+            cmsStudentGrid.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
+            ResumeLayout(false);
+        }
+    }
+}
